@@ -1,6 +1,5 @@
 package com.josh.teampicker
 
-import android.R
 import android.os.Bundle
 import android.webkit.ConsoleMessage
 import android.webkit.WebChromeClient
