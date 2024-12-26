@@ -65,6 +65,9 @@ function pickTeams(team_members, number_of_teams) {
 var textareaValue;
 function getTeams() {
   check_radio_buttons();
+  if(textarea.value.includes("<") || textarea.value.includes(">")){
+        alert("You cannot use < or > special characters");
+  } else {
   if (textarea.value.replace(/\s+/g, '') != '') {
     //if there is a non white space value in the input box
 
@@ -130,6 +133,7 @@ function getTeams() {
       textarea.setAttribute("style", "height:" + (textarea.scrollHeight) + "px;overflow-y:hidden;");
       shrink(textarea);
     }
+  }
   }
 }
 
